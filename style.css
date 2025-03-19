@@ -18,6 +18,22 @@ body {
     flex-direction: column;
 }
 
+body::before {
+    content: "";
+    background-image: url('img/banderas.webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: blur(8px); /* ajuste según tu preferencia */
+    opacity: 0.5;      /* ajuste para claridad de lectura */
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
 
 /* ESTRUCTURA PRINCIPAL */
 #content-wrapper {
