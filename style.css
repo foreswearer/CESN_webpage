@@ -10,7 +10,7 @@ html, body {
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Montserrat', Arial, sans-serif;
     background-color: #b2b2b2;
     color: #002361;
     line-height: 1.6;
@@ -129,7 +129,7 @@ section {
 
 section h2 {
     margin-bottom: 15px;
-    color: #35424a;
+    color: #004080;
 }
 
 
