@@ -1,15 +1,13 @@
 // script.js
 document.addEventListener('DOMContentLoaded', () => {
-    console.log("script.js loaded");
 
-    // Load partials into placeholders
     loadPartial('partials/header.html', 'header-placeholder')
         .then(() => {
-            // Once header is loaded, attach the hamburger toggle
             const menuToggle = document.getElementById('menu-toggle');
             menuToggle.addEventListener('click', () => {
                 const sidebar = document.getElementById('sidebar');
                 sidebar.classList.toggle('open');
+                document.getElementById('content-wrapper').classList.toggle('sidebar-open');
             });
         })
         .catch(err => console.error("Error loading header:", err));
@@ -20,6 +18,7 @@ document.addEventListener('DOMContentLoaded', () => {
     loadPartial('partials/footer.html', 'footer-placeholder')
         .catch(err => console.error("Error loading footer:", err));
 });
+
 
 /**
  * Fetch an HTML partial and insert it into a container by ID.
