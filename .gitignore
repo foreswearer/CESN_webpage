@@ -11,3 +11,4 @@ package.json
 tsconfig.json
 .gitignore
 .vscode/*
+/package-lock.json
